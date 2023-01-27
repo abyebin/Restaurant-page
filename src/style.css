@@ -1,113 +1,130 @@
 @font-face {
-    font-family: 'MyFont';
-    src: url('../src/assets/BigParty4Blue-0f5b.woff2') format('woff2'),
-      url('../src/assets/BigParty4Blue-2575.woff') format('woff');
-    font-weight: 600;
-    font-style: normal;
-  }
-
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    color: var(--defaultText);
+  font-family: 'MyFont';
+  src: url('../src/assets/BigParty4Blue-0f5b.woff2') format('woff2'),
+    url('../src/assets/BigParty4Blue-2575.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
 }
 
-:root{
-    --dark1: #101010;
-    --dark2: #3D0000;
-    --dark3: #950101;
-    --dark4: #FF0000;
-
-    --defaultText: white;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: var(--defaultText);
 }
 
-.content{
-    background-color: var(--dark1);
-    display: grid;
-    grid-template: 1fr 7fr .3fr/1fr;
-    width: 100%;
-    height: 100vh;
+:root {
+  --dark1: #101010;
+  --dark2: #3d0000;
+  --dark3: #950101;
+  --dark4: #ff0000;
+
+  --defaultText: white;
 }
 
-.nav{
-    background-color: var(--dark3);
-    grid-column: 1/-1;
-    grid-row: 1/2;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-
-    }
-.logo-div{
-    padding: 10px;
-}
-.logo-div img{
-    padding: 10px;
-    border-radius: 10px;
-    width: 80px;
-    height: auto;
-    box-shadow: 2px 2px 5px var(--dark1);
-    cursor: pointer;
-}
-.logo-div img:hover{
-    box-shadow: none;
-    transform: scale(1.05);
-}
-.logo-text{
-    text-align: center;
-}
-.logo-text h1{
-    font-family: 'MyFont',sans-serif;
-    font-size: 3.5rem;
-    cursor: pointer;
-}
-.logo-text h1:hover{
-    transform: rotate(2deg) scale(1.1);
-
-}
-.logo-text p{
-    font-family: cursive;
-    margin-top: -10px;
-    opacity: 0.5;
+.content {
+  background-color: var(--dark1);
+  display: grid;
+  grid-template: 1fr 7fr 0.3fr/1fr;
+  width: 100%;
+  height: 100vh;
 }
 
-.main{
-    grid-column: 1/-1;
-    grid-row: 2/3;
-    background-color: var(--dark1);
+.nav {
+  background-color: var(--dark3);
+  grid-column: 1/-1;
+  grid-row: 1/2;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
-figure{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.logo-div {
+  padding: 10px;
 }
-.main-img{
-    max-width: 50%;
-    max-height: fit-content;
+.logo-div img {
+  padding: 10px;
+  border-radius: 10px;
+  width: 80px;
+  height: auto;
+  box-shadow: 2px 2px 5px var(--dark1);
+  cursor: pointer;
 }
-.quote{
-    margin: 10px 0;
-    padding: 5px;
-    background-color: var(--dark3);
-    width: 100%;
-    height: min-content;
-    text-align: center;
+.logo-div img:hover {
+  box-shadow: none;
+  transform: scale(1.05);
 }
-footer{
-    background-color: var(--dark1);
-    grid-column: 1/-1 ;
-    grid-row: 3/-1;
+.click-menu {
+  width: 20%;
+}
+.menu-button {
+  width: 100%;
+  height: 45px;
+  cursor: pointer;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+  background-color: var(--dark1);
+  border-radius: 25px 0 25px 0;
+}
+.menu-button:hover {
+  box-shadow: 2px 2px 5px var(--dark1);
+}
+
+.menu-button:active {
+  background-color: var(--dark2);
+}
+
+.logo-text {
+  text-align: center;
+}
+.logo-text h1 {
+  font-family: 'MyFont', sans-serif;
+  font-size: 3.5rem;
+  cursor: pointer;
+}
+.logo-text h1:hover {
+  transform: rotate(2deg) scale(1.1);
+}
+.logo-text p {
+  font-family: cursive;
+  margin-top: -10px;
+  opacity: 0.5;
+}
+
+.main {
+  grid-column: 1/-1;
+  grid-row: 2/3;
+  background-color: var(--dark1);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-img {
+  max-width: 50%;
+  max-height: fit-content;
+}
+.quote {
+  margin: 10px 0;
+  padding: 5px;
+  background-color: var(--dark3);
+  width: 100%;
+  height: min-content;
+  text-align: center;
+}
+footer {
+  background-color: var(--dark1);
+  grid-column: 1/-1;
+  grid-row: 3/-1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }

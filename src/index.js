@@ -7,6 +7,21 @@ const content = document.querySelector('.content');
 const nav = document.createElement('div');
 nav.classList.add('nav');
 content.appendChild(nav);
+
+//nav > clickmenu
+const clickMenu = document.createElement('div');
+clickMenu.classList.add('click-menu');
+nav.appendChild(clickMenu);
+//nav > clickMenu > Menubutton
+const menuButton = document.createElement('button');
+menuButton.classList.add('menu-button');
+menuButton.textContent = 'EXPLORE MENU';
+clickMenu.appendChild(menuButton);
+//nav > clickMenu > MenuButton > dropDown menu
+const dropDownDiv = document.createElement('div');
+dropDownDiv.classList.add('dropDown-div');
+menuButton.appendChild(dropDownDiv);
+
 //nav > logo-div
 const logoDiv = document.createElement('div');
 logoDiv.classList.add('logo-div');
@@ -51,8 +66,7 @@ fig.appendChild(figCap);
 
 //main > figure > figCaption
 const creditLink = document.createElement('a');
-creditLink.href =
-  'https://unsplash.com/@pablomerchanm';
+creditLink.href = 'https://unsplash.com/@pablomerchanm';
 creditLink.textContent = 'Pablo Merchán Montes';
 figCap.appendChild(creditLink);
 
@@ -82,4 +96,4 @@ footerLinkA.href = 'https://github.com/abyebin';
 footerLinkA.textContent = 'Ebin Aliyas';
 footerLink.appendChild(footerLinkA);
 
-console.log('finished?');
+console.log('click?');
