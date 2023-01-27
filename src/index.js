@@ -32,21 +32,39 @@ dropdownContent.appendChild(link1);
 
 //nav > clickMenu > dropDown-content > links
 const link2 = document.createElement('a');
-link1.href = "#";
+link2.href = "#";
 link2.textContent = 'Nut Burger'
 dropdownContent.appendChild(link2);
 
 //nav > clickMenu > dropDown-content > links
 const link3 = document.createElement('a');
-link1.href = "#";
+link3.href = "#";
 link3.textContent = 'Poached Burger'
 dropdownContent.appendChild(link3);
 
 //nav > clickMenu > dropDown-content > links
 const link4 = document.createElement('a');
-link1.href = "#";
+link4.href = "#";
 link4.textContent = 'Olive Burger'
 dropdownContent.appendChild(link4);
+
+//nav > clickMenu > dropDown-content > links
+const link5 = document.createElement('a');
+link5.href = "#";
+link5.textContent = 'Beef Burger'
+dropdownContent.appendChild(link5);
+
+//nav > clickMenu > dropDown-content > links
+const link6 = document.createElement('a');
+link6.href = "#";
+link6.textContent = 'Elk Burger'
+dropdownContent.appendChild(link6);
+
+//nav > clickMenu > dropDown-content > links
+const link7 = document.createElement('a');
+link7.href = "#";
+link7.textContent = 'Portobello Mushroom Burger'
+dropdownContent.appendChild(link7);
 
 //nav > logo-div
 const logoDiv = document.createElement('div');
@@ -69,7 +87,7 @@ logoText.appendChild(title);
 //nav > logo-text > p
 const subTitle = document.createElement('p');
 subTitle.classList.add('sub-title');
-subTitle.textContent = '"Where every bite is a taste sensation!"';
+subTitle.textContent = 'Where every bite is a taste sensation!';
 logoText.appendChild(subTitle);
 
 //main

@@ -32,6 +32,8 @@
 }
 
 .nav {
+  position: fixed;
+  width: 100%;
   background-color: var(--dark3);
   grid-column: 1/-1;
   grid-row: 1/2;
@@ -44,7 +46,7 @@
 }
 
 .menu-button {
-  width: 350px;
+  width: 250px;
   height: 45px;
   cursor: pointer;
 
@@ -66,8 +68,8 @@
   align-self: flex-end;
 }
 
-.click-menu-div:hover .dropdownContent{
-    display: block;
+.click-menu-div:hover .dropdownContent {
+  display: block;
 }
 .dropdownContent {
   display: none;
@@ -85,6 +87,7 @@
   text-align: center;
   cursor: pointer;
   border-bottom: 1px solid var(--dark1);
+  font-weight: bold;
 }
 
 .dropdownContent a:hover {
@@ -96,7 +99,7 @@
 }
 .logo-div img {
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 10px 0;
   width: 80px;
   height: auto;
   box-shadow: 2px 2px 5px var(--dark1);
@@ -116,7 +119,7 @@
   cursor: pointer;
 }
 .logo-text h1:hover {
-  transform: rotate(2deg) scale(1.1);
+  transform: scale(1.1);
 }
 .logo-text p {
   font-family: cursive;
@@ -145,8 +148,9 @@ figure {
   max-height: fit-content;
 }
 .quote {
-  margin: 10px 0;
+  margin: 30px 0;
   padding: 5px;
+  opacity: 0.8;
   background-color: var(--dark3);
   width: 100%;
   height: min-content;
@@ -157,8 +161,6 @@ footer {
   grid-column: 1/-1;
   grid-row: 3/-1;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  text-align: end;
+  padding: 10px;
 }
