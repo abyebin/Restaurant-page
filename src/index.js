@@ -3,6 +3,7 @@ import logo1 from '../src/assets/food-icon.svg';
 import mainImg1 from '../src/assets/food-main.jpg';
 
 const content = document.querySelector('.content');
+
 // nav
 const nav = document.createElement('div');
 nav.classList.add('nav');
@@ -10,17 +11,42 @@ content.appendChild(nav);
 
 //nav > clickmenu
 const clickMenu = document.createElement('div');
-clickMenu.classList.add('click-menu');
+clickMenu.classList.add('click-menu-div');
 nav.appendChild(clickMenu);
 //nav > clickMenu > Menubutton
 const menuButton = document.createElement('button');
 menuButton.classList.add('menu-button');
 menuButton.textContent = 'EXPLORE MENU';
 clickMenu.appendChild(menuButton);
-//nav > clickMenu > MenuButton > dropDown menu
-const dropDownDiv = document.createElement('div');
-dropDownDiv.classList.add('dropDown-div');
-menuButton.appendChild(dropDownDiv);
+
+//nav clickMenu > dropDown-content
+const dropdownContent = document.createElement('div');
+dropdownContent.classList.add('dropdownContent');
+clickMenu.appendChild(dropdownContent);
+
+//nav > clickMenu > dropDown-content > links
+const link1 = document.createElement('a');
+link1.href = "#";
+link1.textContent = 'Fluff Screamer'
+dropdownContent.appendChild(link1);
+
+//nav > clickMenu > dropDown-content > links
+const link2 = document.createElement('a');
+link1.href = "#";
+link2.textContent = 'Nut Burger'
+dropdownContent.appendChild(link2);
+
+//nav > clickMenu > dropDown-content > links
+const link3 = document.createElement('a');
+link1.href = "#";
+link3.textContent = 'Poached Burger'
+dropdownContent.appendChild(link3);
+
+//nav > clickMenu > dropDown-content > links
+const link4 = document.createElement('a');
+link1.href = "#";
+link4.textContent = 'Olive Burger'
+dropdownContent.appendChild(link4);
 
 //nav > logo-div
 const logoDiv = document.createElement('div');
@@ -50,6 +76,7 @@ logoText.appendChild(subTitle);
 const main = document.createElement('div');
 main.classList.add('main');
 content.appendChild(main);
+
 // main > figure
 const fig = document.createElement('figure');
 main.appendChild(fig);
@@ -88,7 +115,7 @@ const footer = document.createElement('footer');
 content.appendChild(footer);
 //footer > p
 const footerLink = document.createElement('p');
-footerLink.textContent = 'Project By';
+footerLink.textContent = 'Project By: ';
 footer.appendChild(footerLink);
 //footer > p > a
 const footerLinkA = document.createElement('a');
@@ -96,4 +123,27 @@ footerLinkA.href = 'https://github.com/abyebin';
 footerLinkA.textContent = 'Ebin Aliyas';
 footerLink.appendChild(footerLinkA);
 
+//nav > logo-div > img > onliclick
+logoDiv.addEventListener('click', clearPage);
+
+// page clearing function
+function clearPage() {
+  main.replaceChildren();
+}
+
 console.log('click?');
+
+// clickMenu.addEventListener('click',function(){
+//   dropdownContent.setAttribute('style','display: "')
+// })
+
+// menuButton.addEventListener('click', function(){
+//   const list = document.createElement('ul');
+//   for (let i = 0; i < 5; i++) {
+//     const listItem = document.createElement('li');
+//     listItem.textContent = `Item ${i+1}`;
+//     list.appendChild(listItem);
+//   }
+//   dropDownDiv.appendChild(list);
+//   dropDownDiv.classList.toggle('show');
+// });

@@ -18,6 +18,7 @@
   --dark2: #3d0000;
   --dark3: #950101;
   --dark4: #ff0000;
+  --light: white;
 
   --defaultText: white;
 }
@@ -35,10 +36,61 @@
   grid-column: 1/-1;
   grid-row: 1/2;
 
+  max-height: 100px;
+
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
+
+.menu-button {
+  width: 350px;
+  height: 45px;
+  cursor: pointer;
+
+  background-color: var(--dark1);
+  border-radius: 25px 25px 0 0;
+}
+.menu-button:hover {
+  box-shadow: 0px -4px 5px var(--light);
+}
+
+.menu-button:active {
+  background-color: var(--dark2);
+  box-shadow: none;
+}
+
+.click-menu-div {
+  position: relative;
+  display: inline-block;
+  align-self: flex-end;
+}
+
+.click-menu-div:hover .dropdownContent{
+    display: block;
+}
+.dropdownContent {
+  display: none;
+  position: absolute;
+  background-color: var(--dark3);
+  opacity: 0.8;
+  min-width: 100%;
+  z-index: 1;
+}
+
+.dropdownContent a {
+  padding: 12px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  border-bottom: 1px solid var(--dark1);
+}
+
+.dropdownContent a:hover {
+  background-color: var(--dark1);
+}
+
 .logo-div {
   padding: 10px;
 }
@@ -53,24 +105,6 @@
 .logo-div img:hover {
   box-shadow: none;
   transform: scale(1.05);
-}
-.click-menu {
-  width: 20%;
-}
-.menu-button {
-  width: 100%;
-  height: 45px;
-  cursor: pointer;
-
-  background-color: var(--dark1);
-  border-radius: 25px 0 25px 0;
-}
-.menu-button:hover {
-  box-shadow: 2px 2px 5px var(--dark1);
-}
-
-.menu-button:active {
-  background-color: var(--dark2);
 }
 
 .logo-text {
