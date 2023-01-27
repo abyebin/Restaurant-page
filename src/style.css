@@ -49,6 +49,7 @@
     width: 80px;
     height: auto;
     box-shadow: 2px 2px 5px var(--dark1);
+    cursor: pointer;
 }
 .logo-div img:hover{
     box-shadow: none;
@@ -68,7 +69,7 @@
 }
 .logo-text p{
     font-family: cursive;
-    margin-top: -15px;
+    margin-top: -10px;
     opacity: 0.5;
 }
 

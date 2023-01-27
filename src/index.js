@@ -28,7 +28,7 @@ logoText.appendChild(title);
 //nav > logo-text > p
 const subTitle = document.createElement('p');
 subTitle.classList.add('sub-title');
-subTitle.textContent = 'EA or Nothng';
+subTitle.textContent = '"Where every bite is a taste sensation!"';
 logoText.appendChild(subTitle);
 
 //main
@@ -46,13 +46,13 @@ fig.appendChild(mainImg);
 
 //main > figure > figCaption
 const figCap = document.createElement('figcaption');
-figCap.textContent = 'Photo Credit';
+figCap.textContent = 'Photo Credit: ';
 fig.appendChild(figCap);
 
 //main > figure > figCaption
 const creditLink = document.createElement('a');
 creditLink.href =
-  'https://images.unsplash.com/photo-1530554764233-e79e16c91d08?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80';
+  'https://unsplash.com/@pablomerchanm';
 creditLink.textContent = 'Pablo Merchán Montes';
 figCap.appendChild(creditLink);
 
