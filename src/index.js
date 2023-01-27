@@ -26,44 +26,44 @@ clickMenu.appendChild(dropdownContent);
 
 //nav > clickMenu > dropDown-content > links
 const link1 = document.createElement('a');
-link1.href = "#";
-link1.textContent = 'Fluff Screamer'
+link1.href = '#';
+link1.textContent = 'Fluff Screamer';
 dropdownContent.appendChild(link1);
 
 //nav > clickMenu > dropDown-content > links
 const link2 = document.createElement('a');
-link2.href = "#";
-link2.textContent = 'Nut Burger'
+link2.href = '#';
+link2.textContent = 'Nut Burger';
 dropdownContent.appendChild(link2);
 
 //nav > clickMenu > dropDown-content > links
 const link3 = document.createElement('a');
-link3.href = "#";
-link3.textContent = 'Poached Burger'
+link3.href = '#';
+link3.textContent = 'Poached Burger';
 dropdownContent.appendChild(link3);
 
 //nav > clickMenu > dropDown-content > links
 const link4 = document.createElement('a');
-link4.href = "#";
-link4.textContent = 'Olive Burger'
+link4.href = '#';
+link4.textContent = 'Olive Burger';
 dropdownContent.appendChild(link4);
 
 //nav > clickMenu > dropDown-content > links
 const link5 = document.createElement('a');
-link5.href = "#";
-link5.textContent = 'Beef Burger'
+link5.href = '#';
+link5.textContent = 'Beef Burger';
 dropdownContent.appendChild(link5);
 
 //nav > clickMenu > dropDown-content > links
 const link6 = document.createElement('a');
-link6.href = "#";
-link6.textContent = 'Elk Burger'
+link6.href = '#';
+link6.textContent = 'Elk Burger';
 dropdownContent.appendChild(link6);
 
 //nav > clickMenu > dropDown-content > links
 const link7 = document.createElement('a');
-link7.href = "#";
-link7.textContent = 'Portobello Mushroom Burger'
+link7.href = '#';
+link7.textContent = 'Portobello Mushroom Burger';
 dropdownContent.appendChild(link7);
 
 //nav > logo-div
@@ -149,7 +149,7 @@ function clearPage() {
   main.replaceChildren();
 }
 
-console.log('click?');
+console.log('Hello?');
 
 // clickMenu.addEventListener('click',function(){
 //   dropdownContent.setAttribute('style','display: "')

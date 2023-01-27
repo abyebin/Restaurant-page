@@ -20,6 +20,9 @@
   --dark4: #ff0000;
   --light: white;
 
+  --transperent: rgba(255, 0, 0, 0.6);
+  --gradient: linear-gradient(45deg, var(--dark1), var(--dark4), var(--dark1));
+
   --defaultText: white;
 }
 
@@ -34,7 +37,8 @@
 .nav {
   position: fixed;
   width: 100%;
-  background-color: var(--dark3);
+  background: var(--gradient);
+  backdrop-filter: blur(10px);
   grid-column: 1/-1;
   grid-row: 1/2;
 
@@ -42,7 +46,8 @@
 
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 10%;
 }
 
 .menu-button {
@@ -74,7 +79,7 @@
 .dropdownContent {
   display: none;
   position: absolute;
-  background-color: var(--dark3);
+  background: var(--gradient);
   opacity: 0.8;
   min-width: 100%;
   z-index: 1;
@@ -129,7 +134,7 @@
 
 .main {
   grid-column: 1/-1;
-  grid-row: 2/3;
+  grid-row: 2/-2;
   background-color: var(--dark1);
 
   display: flex;
@@ -148,13 +153,14 @@ figure {
   max-height: fit-content;
 }
 .quote {
-  margin: 30px 0;
-  padding: 5px;
+  bottom: 100px;
+  position: relative;
   opacity: 0.8;
   background-color: var(--dark3);
+  background: var(--gradient);
   width: 100%;
-  height: min-content;
   text-align: center;
+  padding: 10px;
 }
 footer {
   background-color: var(--dark1);
